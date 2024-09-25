@@ -43,7 +43,7 @@ nav {
 }
 
 .nav-links .nav-btn {
-  min-width: 120px;
+  min-width: 119px;
   max-width: 100%;
   text-align: center; 
   display: inline-block;
@@ -64,7 +64,6 @@ nav {
   transition: transform ease-in-out 0.2s background-color ease 0.3s;
   background-color: rgba(0, 0, 0, 0.505);
   transform: scale(1.1);
-  transform: translate(2);
 }
 .nav-links .nav-btn:active {
   border-radius: 1px;
@@ -80,17 +79,20 @@ nav {
 .cta {
   z-index: 99999;
   background-color: #78c6ca;
-  padding: 10px 20px;
+  padding: 25px 20px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: 0.5s ease;
+  transition: 0.25s ease;
   cursor: pointer;
+  transition: 0.25s ease;
 }
 
 .cta:hover {
   background-color: #379499;
-  border-radius: 8px;
+  border-radius: 20px;
+  transform: scale(0.95);
+  transition: 0.45s ease;
 }
 
 
@@ -305,11 +307,11 @@ body::before {
 .form-group textarea:not(:placeholder-shown) + label {
   top: 0;
   font-size: 12px;
-  color: #ff007a;
+  color: #78c6ca;
 }
 
 .btn-submit {
-  background-color: #ff007a;
+  background-color: #78c6ca;
   color: #fff;
   border: none;
   padding: 15px 30px;
@@ -320,7 +322,7 @@ body::before {
 }
 
 .btn-submit:hover {
-  background-color: #e6006f;
+  background-color: #379499;
   transform: scale(1.05);
 }
 
@@ -331,7 +333,7 @@ body::before {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 0, 122, 0.5), transparent);
+  background: radial-gradient(circle, rgba(87, 203, 229, 0.5), transparent);
   animation: rotate-background 10s infinite linear;
   z-index: -1;
 }
@@ -472,7 +474,7 @@ body::before {
     }
 .chart-container {
   width: 70%;
-  margin: 0 auto 40px auto;
+  margin: 0 auto calc(3% + 40px) auto;
 }
 
 canvas {
