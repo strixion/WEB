@@ -1,4 +1,5 @@
 document.body.onload = randcol();
+document.body.onload = ktrue();
 function randcol() {
   var_colors = ['#424242', '#626262', '525252', '#323232', '#727272', '#828282', '#474747'];
   card1 = document.getElementById('card1').style.backgroundColor = var_colors[(Math.floor(Math.random() * var_colors.length))];
@@ -6,6 +7,21 @@ function randcol() {
   card3 = document.getElementById('card3').style.backgroundColor = var_colors[(Math.floor(Math.random() * var_colors.length))];
   card4 = document.getElementById('card4').style.backgroundColor = var_colors[(Math.floor(Math.random() * var_colors.length))];
   card5 = document.getElementById('card5').style.backgroundColor = var_colors[(Math.floor(Math.random() * var_colors.length))];
+}
+
+function ktrue () {
+k = true;
+}
+function previewchart1(k) {
+  console.log(k)
+  thiscanvas = document.getElementById("canvas1");
+  if (k == true) {
+    thiscanvas.style = "transform: scale(2);"
+    k == false;
+  } else {
+    thiscanvas.style = "transform: scale(1);"
+    k == true
+  }
 }
 window.addEventListener('scroll', () => {
   const features = document.querySelectorAll('.feature');

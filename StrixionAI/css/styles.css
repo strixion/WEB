@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat-Medium', 'Arial', 'sans-serif', 'fonts/Montserrat-Medium.ttf';
   background-color: #000;
   color: #fff;
   overflow-x: hidden;
+  font-family: Arial;
 }
 
 html {
@@ -460,28 +461,66 @@ body::before {
   }
 }
 
-    .fade-in {
-      animation: fadeIn 2s ease-in-out;
-    }
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-    .bounce {
-      animation: bounce 1s infinite;
-    }
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+.chart-section {
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  width: 100%;
+  height: calc(auto + 80vh);
+  padding: 0;
+}
+
 .chart-container {
-  width: 70%;
-  margin: 0 auto calc(3% + 40px) auto;
+  align-items: center;
+  align-content: center;
+  display: inline-block;
+  z-index: 9999;
+  position: relative;
+  height: 25vh;
+  width: 30%;
+  padding: 90px;
+  user-select: none;
+  margin-top: -5vh;
+}
+.text-descr-chart {
+  display: inline-block;
+  z-index: 9999;
+  position: relative;
+  height: 10vh;
+  width: inherits;
+  margin-top: 10px;
+  user-select: none;
 }
 
 canvas {
+  user-select: none;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 50px;
   border-radius: 15px;
+  transition: ease-out 0.2s;
 }
+
+/* canvas:active {
+  box-shadow: 0px 0px 10px black;
+  transform: scale(1.2);
+  padding: 55px;
+} */
 
     @keyframes bounce {
       0%, 20%, 50%, 80%, 100% {
@@ -495,11 +534,7 @@ canvas {
       }
     }
 
-.chart-container {
-  position: relative;
-  height: 25vh;
-  width: 60vw;
-}
+
 
 section {
   background-color: rgba(0, 0, 0, 0.7);
@@ -639,7 +674,12 @@ section {
   }
 }
 
-
+@font-face {
+  font-family: "Montserrat";
+  src: url(".../fonts/Montserrat-Medium.ttf") format("truetype");  
+  font-style: normal; 
+  font-weight: normal; 
+}
 /* 575 px и менее — смартфоны в портретной ориентации (вертикально);
 576 — 767 px — смартфоны в альбомной ориентации (горизонтально);
 768 — 991 px — планшеты в портретной ориентации (вертикально);
