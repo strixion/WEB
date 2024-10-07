@@ -148,3 +148,30 @@ stats.forEach(stat => {
   };
   updateCount();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  let lastScrollY = window.pageYOffset;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.pageYOffset;
+    
+    if (lastScrollY > currentScrollY) {
+      // Скролл вверх
+      header.classList.add("shrink");
+    } else {
+      // Скролл вниз
+      header.classList.remove("shrink");
+    }
+
+    lastScrollY = currentScrollY;
+  });
+});
+
+var item = document.querySelector("#bullet-cursor");
+
+block.onmousemove = function(e) {
+item.style.position = 'fixed';
+item.style.left = e.clientX + -20 + 'px';
+item.style.top = e.clientY + -20 + 'px';
+}
