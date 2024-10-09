@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нась</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="../particles.js"></script>
+  
+  <link rel="icon" href="images/web_logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="images/new_logo.png" alt="Логотип" width="98" onclick="to_home_page()">
+          </div>
+          <ul class="nav-links">
+            <li><a onclick="You_are_here()" class="nav-btn" id="here-man">О нас</a></li>
+            <li><a href="#members" class="nav-btn">Участники</a></li>
+            <li><a href="#whowe?" class="nav-btn">Кто мы</a></li>
+            <li><a href="#prjects" class="nav-btn">Портфолио</a></li>
+          </ul>
+          <a href="#contact" class="cta">Связаться с нами</a>
+        </nav>
+      </header>
+
+    <section class="main-section">
+        <div id="bg-people">
+          <div id="people">
+          </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="" alt="Фотография участника" id="modal-image">
+        <h3 id="modal-name"></h3>
+        <p id="modal-role"></p>
+      </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="js/card-gen.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

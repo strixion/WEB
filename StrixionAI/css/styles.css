@@ -69,6 +69,7 @@ nav {
   margin: 1px;
   align-items: center;
   transition: ease 0.3s;
+  cursor: pointer;
 }
 
 .nav-links .nav-btn:hover {
@@ -376,12 +377,10 @@ body::before {
 }
 
 .team-member {
+  display: inline-block;
+  gap: calc(2% + 40vh);
+  position: relative;
   perspective: 1000px;
-}
-
-.team-member:hover .card {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
 }
 /* #424242; #4f0c0c; #0f4f0c #13335e #5e135e*/
 .card {
@@ -395,6 +394,7 @@ body::before {
   transform-style: preserve-3d;
   transition: transform 0.6s;
   cursor: pointer;
+  margin: calc(2vh - 10px);
 }
 
 .card img {
@@ -414,7 +414,7 @@ body::before {
 }
 
 .card:hover {
-  transform: rotateY(0deg) translateZ(100px);
+  transform: rotateY(0deg) translateZ(10px);
 }
 
 .modal {
@@ -761,6 +761,45 @@ section {
   src: url(".../fonts/Montserrat-Medium.ttf") format("truetype");  
   font-style: normal; 
   font-weight: normal; 
+}
+
+/* About us page */
+
+.main-section {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 50px 0;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 15px;
+  justify-items: baseline;
+  position: relative;
+  
+}
+
+#bg-people
+{
+  margin-left: calc(15% + 20vh);
+  width: auto;
+  height: 50vh;
+  background: linear-gradient(91deg, darkblue, black);
+  overflow-x: auto;
+  scroll-margin: 2%;
+  scroll-behavior: smooth;
+  position: relative;
+  justify-content: left;
+}
+
+#people {
+  display: inline-flexbox;
+  gap: calc(2% + 20vh);
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  justify-content: left;
+}
+
+#member {
+  display: inline;
 }
 /* 575 px и менее — смартфоны в портретной ориентации (вертикально);
 576 — 767 px — смартфоны в альбомной ориентации (горизонтально);

@@ -1,5 +1,8 @@
 document.body.onload = randcol();
 document.body.onload = ktrue();
+
+data = fetch("./members.json");
+
 function randcol() {
   var_colors = ['#424242', '#626262', '525252', '#323232', '#727272', '#828282', '#474747'];
   card1 = document.getElementById('card1').style.backgroundColor = var_colors[(Math.floor(Math.random() * var_colors.length))];
@@ -170,8 +173,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var item = document.querySelector("#bullet-cursor");
 
+function You_are_here() 
+{
+  here = document.getElementById('here-man');
+  here.innerText = "Уже здесь!";
+}
+
 block.onmousemove = function(e) {
 item.style.position = 'fixed';
 item.style.left = e.clientX + -20 + 'px';
 item.style.top = e.clientY + -20 + 'px';
 }
+
