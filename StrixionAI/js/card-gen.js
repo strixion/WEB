@@ -1,18 +1,26 @@
 document.body.onload = MembersApp();
 
-// название переменной = [ИМЯ ФАМИЛИЯ ДОЛЖНОСТЬ АДРЕС-КАРТИНКИ]
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
+
 
 function MembersApp() {
-    var member1 = ['Денис Астапенко', 'Фронтенд', "./images/member3.jpg"];
-    var member2 = ['Родион Бушуев', 'Тим-лид', "./images/member1.png"];
-    var member3 = ['Ксения Попкова', 'UX-UI дизайнер', "./images/member2.png"];
-    var member4 = ['Дмитрий Елькин', 'Маркетолог', "./images/member5.jpeg"];
-    var member5 = ['Руслан Маннанов', 'Бэкэнд', "./images/member4.png"];
-    addMember.apply(null, member4)
-    addMember.apply(null, member2);
-    addMember.apply(null, member3);
-    addMember.apply(null, member1);
-    addMember.apply(null, member5);
+  //список челов= [ИМЯ ФАМИЛИЯ      ДОЛЖНОСТЬ          АДРЕС-КАРТИНКИ],
+    var members = [
+      ['Денис Астапенко', 'Фронтенд', "./images/member3.jpg"],
+      ['Родион Бушуев', 'Тим-лид', "./images/member1.png"],
+      ['Ксения Попкова', 'UX-UI дизайнер', "./images/member2.png"],
+      ['Дмитрий Елькин', 'Маркетолог', "./images/member5.jpeg"],
+      ['Руслан Маннанов', 'Бэкэнд', "./images/member4.png"]
+                  ];
+    
+    var howmany_members = members.length;
+    document.getElementById('people').style.width = (howmany_members * 300) + "px";
+    console.log(document.getElementById('people').style.width);
+    // пробегаем по каждому челу и делаем карточки на странице
+    members.forEach((element) => addMember.apply(null, element));
 }
 function addMember(nme, imgg, rolee) 
 {
@@ -64,4 +72,14 @@ document.querySelectorAll('.team-member').forEach(member => {
     });
   });
 
-  
+  var bsDiv = document.getElementById("box-shadow-div");
+  var x, y;
+  window.addEventListener('mousemove', function(event){
+    x = event.clientX;
+    y = event.clientY;                    
+    if ( typeof x !== 'undefined' ){
+      bsDiv.style.left = x + "px";
+      bsDiv.style.top = y + "px";
+    }
+  }, false);
+

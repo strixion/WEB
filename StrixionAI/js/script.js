@@ -185,3 +185,6 @@ item.style.left = e.clientX + -20 + 'px';
 item.style.top = e.clientY + -20 + 'px';
 }
 
+function go_home() {
+  
+}

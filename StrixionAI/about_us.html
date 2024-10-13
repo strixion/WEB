@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О нась</title>
-  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="css/grid-bg.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+  
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
@@ -12,7 +16,7 @@
   
   <link rel="icon" href="images/web_logo.png">
 </head>
-<body>
+<body class="body_hide">
     <header>
         <nav>
           <div class="logo">
@@ -29,12 +33,22 @@
       </header>
 
     <section class="main-section">
+      <div class="about-people">
+        <p><b>
+          Команда STRIXION
+        </b>
+          <a>состоит из 5 людей</a></p>
+      </div>
         <div id="bg-people">
           <div id="people">
           </div>
         </div>
     </section>
 
+
+
+
+    <!-- Эта часть открывается по клику на карточки людей! -->
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -47,5 +61,9 @@
     <script src="js/app.js"></script>
     <script src="js/card-gen.js" type="module"></script>
     <script src="js/script.js" type="module"></script>
+
+    <!-- задник -->
+    <div id="bgsvg"></div>
+    <div id="box-shadow-div"></div>
 </body>
 </html>
