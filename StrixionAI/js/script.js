@@ -1,6 +1,7 @@
 document.body.onload = randcol();
 document.body.onload = ktrue();
 
+
 data = fetch("./members.json");
 
 function randcol() {

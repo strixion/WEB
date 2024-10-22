@@ -1,6 +1,7 @@
 document.body.onload = MembersApp();
+document.body.onload = scrr();
 
-
+window.onscroll = scrr();
 setTimeout(function(){
 	document.body.classList.add('body_visible');
 }, 200);
@@ -76,10 +77,13 @@ document.querySelectorAll('.team-member').forEach(member => {
   var x, y;
   window.addEventListener('mousemove', function(event){
     x = event.clientX;
-    y = event.clientY;                    
+    y = event.clientY;
     if ( typeof x !== 'undefined' ){
       bsDiv.style.left = x + "px";
       bsDiv.style.top = y + "px";
     }
   }, false);
-
+function scrr() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  console.log(scrollTop);
+}

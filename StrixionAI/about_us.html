@@ -23,16 +23,17 @@
             <img src="images/new_logo.png" alt="Логотип" width="98" onclick="to_home_page()">
           </div>
           <ul class="nav-links">
+            <li><a href="index.html" class="nav-btn">Главная</a></li>
             <li><a onclick="You_are_here()" class="nav-btn" id="here-man">О нас</a></li>
             <li><a href="#members" class="nav-btn">Участники</a></li>
-            <li><a href="#whowe?" class="nav-btn">Кто мы</a></li>
-            <li><a href="#prjects" class="nav-btn">Портфолио</a></li>
+            <li><a href="#whowe?" class="nav-btn">Отзывы</a></li>
+            <!-- <li><a href="#prjects" class="nav-btn">Портфолио</a></li> -->
           </ul>
           <a href="#contact" class="cta">Связаться с нами</a>
         </nav>
       </header>
 
-    <section class="main-section">
+    <section class="section">
       <div class="about-people">
         <p><b>
           Команда STRIXION
@@ -45,7 +46,40 @@
         </div>
     </section>
 
+    <section class="section" height="1000px" width="100%">
+      <div class="reviews-stack">
+        <div class="review-scroll">
+          <div class="reviews">
+            <div class="review">
+              <div id="avatar"><img src="/images/reviews/numero-uno-man-wtf-pinkman.png" alt=""></div>
+              <a id="review-text">Благодарю за написание скрипта! Теперь выполняю рутинные задачи не своими руками. Сделал быстро, просто, правки были приняты и услышаны. Рекомендую к сотрудничеству</a>
+            </div>
+            <div class="review">
+              <div id="avatar"><img src="/images/reviews/numero-uno-man-wtf-pinkman.png" alt=""></div>
+              <a id="review-text">Благодарю за написание скрипта! Теперь выполняю рутинные задачи не своими руками. Сделал быстро, просто, правки были приняты и услышаны. Рекомендую к сотрудничеству</a>
+            </div>
+            <div class="review">
 
+              <div id="avatar"><img src="/images/reviews/numero-uno-man-wtf-pinkman.png" alt=""></div>
+              <a id="review-text">Благодарю за написание скрипта! Теперь выполняю рутинные задачи не своими руками. Сделал быстро, просто, правки были приняты и услышаны. Рекомендую к сотрудничеству</a>
+            </div>
+            <div class="review">
+
+              <div id="avatar"><img src="/images/reviews/numero-uno-man-wtf-pinkman.png" alt=""></div>
+              <a id="review-text">Благодарю за написание скрипта! Теперь выполняю рутинные задачи не своими руками. Сделал быстро, просто, правки были приняты и услышаны. Рекомендую к сотрудничеству</a>
+            </div>
+            <div class="review">
+
+              <div id="avatar"><img src="/images/reviews/numero-uno-man-wtf-pinkman.png" alt=""></div>
+              <a id="review-text">Благодарю за написание скрипта! Теперь выполняю рутинные задачи не своими руками. Сделал быстро, просто, правки были приняты и услышаны. Рекомендую к сотрудничеству</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-about">
+        <a>Что говорят о нас клиенты </a>
+      </div>
+    </section>
 
 
     <!-- Эта часть открывается по клику на карточки людей! -->
@@ -57,13 +91,22 @@
         <p id="modal-role"></p>
       </div>
     </div>
-    
+    <div id="box-shadow-div"></div>
+    <!-- <div id="bgsvg"></div> -->
+    <footer>
+      <p>&copy; 2024 StrixionAI. Все права защищены.</p>
+      <ul class="footer-links">
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Условия использования</a></li>
+      </ul>
+    </footer>
+
     <script src="js/app.js"></script>
     <script src="js/card-gen.js" type="module"></script>
     <script src="js/script.js" type="module"></script>
-
+    
     <!-- задник -->
-    <div id="bgsvg"></div>
-    <div id="box-shadow-div"></div>
+    
+
 </body>
 </html>

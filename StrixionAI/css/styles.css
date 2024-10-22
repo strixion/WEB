@@ -625,16 +625,16 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.demo-request-section form {
-  display: flex;
-  flex-direction: column;
+
+
+#demo-request form {
+  display:flex;
+  justify-content: center;
   gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
   background-color: rgba(12, 73, 83, 0);
 }
 
-.demo-request-section input, .demo-request-section textarea {
+#demo-request input, #demo-request textarea {
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -643,7 +643,7 @@ h2 {
   color: white;
 }
 
-.demo-request-section button {
+#demo-request button {
   padding: 15px;
   border-radius: 5px;
   background-color: #00c853;
@@ -652,6 +652,7 @@ h2 {
 }
 
 #demo-request {
+  align-content: center;
   position: relative;
   border-radius: 0;
   margin: auto;
