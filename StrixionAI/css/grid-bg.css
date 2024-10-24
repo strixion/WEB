@@ -163,8 +163,10 @@ html {
 
 #bg-people
 {
-    height: 400px;
+    height: 100%;
     border-top-left-radius: 2vh;
+    border-style: solid;
+    border-color: #a8436856;
     border-top-right-radius: 2vh;
     margin-left: -10%;
     display: flexbox;
@@ -465,4 +467,14 @@ footer p {
 .footer-links li a {
   color: #fff;
   text-decoration: none;
+}
+
+.people-section
+{
+  display: flexbox;
+  height: 400px;
+  width: 100%;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  margin-left: -1px;
 }
